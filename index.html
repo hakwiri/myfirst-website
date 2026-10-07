@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payday Survival List 🇰🇪</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load JS after DOM parses -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Payday Survival List 💸</h1>
+      <p id="countdown-banner" class="banner">Calculating days until payday...</p>
+    </header>
+    
+    <!-- Expense Entry Form -->
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense (e.g. Rent, Fare, Chapati)" required>
+      <input type="number" id="expense-cost" placeholder="Cost (KES)" min="1" required>
+      <button type="submit" id="add-btn">Add Item</button>
+    </form>
+
+    <!-- Summary Box -->
+    <div class="summary-box">
+      <h2 id="total-status">Total needed: KES 0</h2>
+    </div>
+
+    <!-- Dynamic Expense List -->
+    <ul id="expense-list">
+      <!-- JavaScript will inject items here dynamically -->
+    </ul>
+  
+    
+  </div>
+
+</body>
+</html>
